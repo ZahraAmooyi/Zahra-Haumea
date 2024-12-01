@@ -45,6 +45,14 @@ ul#menu-display{
 }
 #menu-display > li{
     padding: 10px 0; 
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+ 
+#menu-display > li span{ 
+    font-weight: 900;
+    color: #2301a1;
 }
  
 
