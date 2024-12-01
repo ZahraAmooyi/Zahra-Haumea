@@ -1,11 +1,12 @@
 body{
     margin: 0;
+    padding: 0;
 }
 header{ 
-    background-color: #333;
+    background-color: #2301a1;
     color: #fff;
     padding: 10px 20px;
-   
+   font-weight: 900;
 }
 .container{
      
@@ -17,8 +18,7 @@ header{
     display: flex;
    list-style: none;
    justify-content: space-between;
-
-}
+ }
 .nav-links> li{
     margin-left: 20px;
 }
@@ -26,22 +26,35 @@ header{
     color: #fff;
     text-decoration: none;
     font-size: 20px; 
+    transition: .7s all; 
 }
-.nav-links a:hover {
-    color: #f0a500; 
+.nav-links li a:hover {
+    color: #fffb00;
+    transition: .7s all; 
 }
 
 .data-container {
     margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    border-radius: 4px; 
+    background-color: #f8ffc1;
+} 
+ul#menu-display{
+    list-style: square; 
 }
 #menu-display > li{
-    padding: 10px 0;
+    padding: 10px 0; 
 }
-#menu-display > li> span{
-    color: blueviolet;
-    padding: 10px 0;
+ 
+
+@media(max-width:768px)
+{  
+    .nav-links >li> a{
+    font-size: 17px;
+}
+.container h1{
+    
+    font-size: 21px;
+}
 }
