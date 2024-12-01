@@ -21,7 +21,7 @@ async function fetchData(ulr){
       container.innerHTML = ''; // Clear existing content
       details.forEach(element => {
         const childLi= document.createElement("li");
-        const HTML=` <span>${element.name}</span> : ${element.description}`;
+        const HTML=` <span>${element.name} : </span>   ${element.description}`;
         console.log(HTML);
         childLi.innerHTML=HTML;
         container.appendChild(childLi);
